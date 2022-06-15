@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> Pet feeder </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#check">check</a>
+        <a href="#camera">camera</a>
+        <a href="#feed">feed</a>
+        <a href="#plan">plan</a>
+        <a href="#history">history</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#box" class="fas fa-bone"></a>
+        </div>
+
+
+</header>
+
+<!-- header section ends -->
+<!-- IR section starts -->
+  <div class="cat-food">
+
+    <div class="content">
+      
+        <h3> <span>Select</span>  bowl to check status</h3>
+        <form action="/ir_status" method="POST">
+          <label for="pname">Select a pet:</label>
+            <select id="pname" required name="bowlID">
+              <option value="1">Pet 1</option>
+              <option value="2">Pet 2</option>
+            </select>
+          <br>
+      
+          <input class="btn" type="submit" value="CHECK" >
+        </form>
+
+        <a href="{{url_for('feature')}}"> <img src="https://cdn-icons-png.flaticon.com/512/2553/2553673.png" alt=""> </a>
+    </div>
+
+    <div class="image">
+        <img src="https://www.pngkit.com/png/full/55-559056_husse-jersey-pet-food-husse-logo.png" alt="">
+    </div>
+
+</div>

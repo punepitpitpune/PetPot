@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/style.css/">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> Pet feeder </a>
+
+    <nav class="navbar">
+        <a href="{{url_for('feature')}}">home</a>
+        <a href="{{url_for('ir')}}">check</a>
+        <a href="{{url_for('camera')}}">camera</a>
+        <a href="{{url_for('feed')}}">feed</a>
+        <a href="{{url_for('plan')}}">plan</a>
+        <a href="{{url_for('select_history')}}">history</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- dog and cat food banner section starts -->
+
+<div class="dog-food">
+
+    <div class="content">
+        <h3> <span>Dog</span> feed </h3>
+        <p>Manually Control the feeder</p>
+        <div class="done">feeding successful!!</div>
+        <a href="{{url_for('feature')}}"> <img src="https://cdn3.iconfinder.com/data/icons/dogs-12/512/Pote-512.png" alt=""> </a>
+    </div>
+
+</div>
+
+
+<!-- dog and cat food banner section ends -->
+
+<!-- custom js file link  -->
+<script src="../static/script.js"></script>
+
+</body>
+</html>

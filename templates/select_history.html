@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/style.css/">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> Pet feeder </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#check">check</a>
+        <a href="#camera">camera</a>
+        <a href="#feed">feed</a>
+        <a href="#plan">plan</a>
+        <a href="#history">history</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <a href="#box" class="fas fa-bone"></a>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+  <!-- feed section starts  -->
+
+<section class="feature" id="feature">
+  
+    <h1 class="heading"> Select <span> Feature to check Log</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-dog"></i>
+            <h3>Bowl Empty Log</h3>
+            <a href="{{url_for('ir_history')}}" class="btn">Check Bowl Empty Log</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bone"></i>
+            <h3>Feed Log</h3>
+            <a href="{{url_for('servo_history')}}" class="btn">Check Feed Log</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- feed section ends -->
+
+<!-- custom js file link  -->
+<script src="../static/script.js/"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Pet Food Website Design Tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../static/style.css/">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> Pet feeder </a>
+
+    <nav class="navbar">
+        <a href="{{url_for('feature')}}">home</a>
+        <a href="{{url_for('ir')}}">check</a>
+        <a href="{{url_for('camera')}}">camera</a>
+        <a href="{{url_for('feed')}}">feed</a>
+        <a href="{{url_for('plan')}}">plan</a>
+        <a href="{{url_for('select_history')}}">history</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+  <!-- feed section starts  -->
+
+<section class="feature" id="feature">
+  
+    <h1 class="heading"> our <span>feature</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-dog"></i>
+            <h3>IR</h3>
+            <a href="{{url_for('ir')}}" class="btn">check food</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bone"></i>
+            <h3>feed</h3>
+            <a href="{{url_for('feed')}}" class="btn">feed now</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-camera"></i>
+            <h3>Real time</h3>
+            <a href="{{url_for('camera')}}" class="btn">turn on</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-calendar"></i>
+            <h3>Planning</h3>
+            <a href="{{url_for('plan')}}" class="btn">create plan</a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>History</h3>
+            <a href="{{url_for('select_history')}}" class="btn">check history</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- feed section ends -->
+
+<!-- custom js file link  -->
+<script src="../static/script.js/"></script>
+
+</body>
+</html>
